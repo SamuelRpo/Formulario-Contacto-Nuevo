@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Textarea</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form>
+
+        <h2>Formulario de contacto</h2>
+
+        <!-- SIMPLE INPUTS -->
+
+        <div class="form_input">
+            <label for="Nombre">Nombre Completo</label>
+            <input class="input" type="text" placeholder="Jhon Doe" id="Nombre" required>
+        </div>
+
+        <div class="form_input">
+            <label for="email">Email</label>
+            <input class="input" type="email" placeholder="ejemplo@gmail.com" required id="email">
+        </div>
+
+        <!-- SELECT Y OPTION -->
+
+        <div class="form_select">
+            <label>Tipo de Usuario
+                <select required name="type-of-user">
+                    <option></option>
+                    <option value="client">Cliente</option>
+                    <option value="business">Empresa</option>
+                    <option value="other">Otros</option>
+                </select>
+            </label>
+        </div>
+
+        <!-- DATALISTS -->
+
+        <div class="form_select">
+            <label>Referente
+                <input list="referente" name="referente" class="datalist">
+                <datalist id="referente" name="referente">
+                    <option value="Soy Dalto">Creador de Contenido</option>
+                    <option value="Una empresa">Una empresa del rubro IT</option>
+                    <option value="Amigo/s">Un amigo me recomendó</option>
+                </>
+            </label>
+        </div>
+
+        <!-- TEXTAREA -->
+
+        <div class="form_message">
+            <label for="mensaje">Mensaje</label>
+            <textarea class="input" maxlength="140" rows="8" placeholder="Dejanos un mensaje... (Opcional)" id="mensaje"></textarea>
+        </div>      
+
+        <!-- CHECKBOX -->
+
+        <div class="form_terms">
+            <label for="acepto" class="label_checkbox">Acepto los términos y condiciones
+            <input class="checkbox" type="checkbox" id="acepto">
+        </label>
+        </div>
+
+        <!-- SUBMIT -->
+
+        <div class="form_submit">
+            <input class="submit" type="submit">
+        </div>
+        
+    </form>
+</body>
+</html>

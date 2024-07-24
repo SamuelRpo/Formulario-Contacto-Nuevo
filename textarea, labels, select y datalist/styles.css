@@ -1,0 +1,95 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #222;
+    color: #eee;
+}
+
+h2{
+    text-align: center;
+    margin:0;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: 100;
+    padding: 10px;
+    font-size: 1.4em;
+}
+
+form{
+    background-color: transparent;
+    padding: 10px 0;
+    min-width: 200px;
+    max-width: 500px;
+    box-shadow: 0 0 55px #4f92;
+    margin: 50px auto;
+    border-radius: 15px;
+    border: 1px solid #4f9;
+}
+
+.form_input, .form_message{
+    padding: 5px 20px;
+}
+
+.input, .submit, select, .datalist{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 6px 8px;
+    border: 1px solid #4f9;
+    box-shadow: 0 0 15px #4f92;
+    background: transparent;
+    border-radius: 10px;
+    color: #4f9;
+    resize: vertical;
+    min-height: 50px;
+}
+
+input::placeholder, textarea::placeholder{
+    color: #4f96;
+}
+
+textarea {
+    min-width: 100%;
+    resize: none;
+    min-height: 140px;
+    font-family: sans-serif;
+    padding: 8px;
+}
+
+option {
+    background-color: #222;
+}
+
+.form_terms{
+    padding: 0 20px;
+}
+
+.checkbox{
+    width: auto;
+    height: 10px;
+}
+
+.label_checkbox{
+    padding: 5px;
+}
+
+.form_submit, .form_select{
+    padding: 10px 20px;
+}
+
+label{
+    line-height: 2;
+    font-size: 0.88em; 
+}
+
+.submit{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.submit:hover{
+    cursor: pointer;
+    background-color: #fff1;
+}
+
